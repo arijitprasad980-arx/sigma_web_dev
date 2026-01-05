@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Planner | Study & Task Manager</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" >
+</head>
+
+<body class="dark-theme">
+
+<div class="app-container">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <h2>Elite<span>Plan</span></h2>
+        </div>
+
+        <!-- Navigation (CSS :target ready) -->
+        <nav class="menu">
+            <a href="#home" class="menu-item">🏠 Home</a>
+            <a href="#dashboard" class="menu-item">📊 Dashboard</a>
+            <a href="#study" class="menu-item">📚 Study</a>
+            <a href="#personal" class="menu-item">👤 Personal</a>
+        </nav>
+
+        <!-- Weekly Progress -->
+        <div class="sidebar-card">
+            <h3>Weekly Goal</h3>
+            <div class="progress-container">
+                <div class="progress-fill" style="width:65%;"></div>
+            </div>
+            <p>65% Completed</p>
+        </div>
+
+        <!-- Mini Calendar -->
+        <div class="mini-calendar">
+
+            <div class="cal-header">
+                <h3>December 2025</h3>
+            </div>
+
+            <div class="calendar-grid">
+
+                <!-- Day labels -->
+                <div class="day-label">M</div>
+                <div class="day-label">T</div>
+                <div class="day-label">W</div>
+                <div class="day-label">T</div>
+                <div class="day-label">F</div>
+                <div class="day-label">S</div>
+                <div class="day-label">S</div>
+
+                <!-- Empty slots -->
+                <span class="empty"></span>
+                <span class="empty"></span>
+                <span class="empty"></span>
+
+                <!-- Dates -->
+                <span class="today">1</span><span>2</span><span>3</span><span>4</span>
+                <span>5</span><span>6</span><span>7</span>
+                <span>8</span><span>9</span><span>10</span><span>11</span>
+                <span>12</span><span>13</span><span>14</span>
+                <span>15</span><span>16</span><span>17</span><span>18</span>
+                <span>19</span><span>20</span><span>21</span>
+                <span>22</span><span>23</span><span>24</span><span>25</span>
+                <span>26</span><span>27</span><span>28</span>
+                <span>29</span><span>30</span><span>31</span>
+
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content">
+
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <div class="welcome-text">
+                <h1>Good Morning, Student <span class="streak-badge">🔥 3</span></h1>
+                <p>You have <strong>3 tasks</strong> left today.</p>
+            </div>
+            <div class="avatar">EP</div>
+        </header>
+
+        <!-- ================= HOME ================= -->
+        <section id="home" class="page">
+
+            <div class="input-card">
+                <h2>Add New Task</h2>
+
+                <div class="input-group">
+                    <input type="text" placeholder="Task name">
+                    <select>
+                        <option>🔥 High Priority</option>
+                        <option>⚡ Medium Priority</option>
+                        <option>🌱 Low Priority</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <select>
+                        <option>Study</option>
+                        <option>College</option>
+                    </select>
+                    <input type="date">
+                    <input type="number" placeholder="HH">
+                    <input type="number" placeholder="MM">
+                    <button class="add-btn">Add Task</button>
+                </div>
+            </div>
+
+            <div class="task-section">
+                <h2>Active Tasks</h2>
+
+                <div class="task-list">
+                    <div class="task-card high">
+                        <h4>Revise Transformers</h4>
+                        <p>Study • 2h</p>
+                    </div>
+
+                    <div class="task-card medium">
+                        <h4>RLC Lecture Notes</h4>
+                        <p>College • 1h</p>
+                    </div>
+
+                    <div class="task-card low">
+                        <h4>HTML Practice</h4>
+                        <p>Study • 45m</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================= DASHBOARD ================= -->
+        <section id="dashboard" class="page">
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Focus Time</h3>
+                    <p>12h 30m</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Tasks Completed</h3>
+                    <p>8</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Weekly Streak</h3>
+                    <p>🔥 3 Days</p>
+                </div>
+            </div>
+
+            <div class="charts-container">
+                <div class="chart-box">
+                    <h3>Focus Split</h3>
+                    <div class="chart-placeholder">Chart Visualization</div>
+                </div>
+
+                <div class="chart-box">
+                    <h3>Weekly Activity</h3>
+                    <div class="chart-placeholder">Chart Visualization</div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================= STUDY ================= -->
+        <section id="study" class="page">
+            <h2>Study Planner</h2>
+            <p>Plan subjects, sessions, and revision schedules.</p>
+        </section>
+
+        <!-- ================= PERSONAL ================= -->
+        <section id="personal" class="page">
+            <h2>Personal Goals</h2>
+            <p>Track habits, routines, and self-improvement goals.</p>
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
